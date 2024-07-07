@@ -1,0 +1,45 @@
+<%- include('layouts/header') -%>
+
+    <body>
+        <h1>All Purchase Orders</h1>
+        <%- include('layouts/nav') -%>
+       
+        <table class="allPurchaseTable">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Province</th>
+                <th>Phone</th>
+                <th>Jackets</th>
+                <th>Caps</th>
+                <th>Gloves</th>
+                <th>Provice Tax</th>
+                <th>Total</th>
+            </thead>
+            <tbody>
+                <% purchases.forEach((p) => { %>
+                    <tr>
+                      <td> <%= p.name %> </td>
+                      <td> <%= p.email %> </td>
+                      <td> <%= p.address %> </td>
+                      <td> <%= p.city %> </td>
+                      <td> <%= p.provinceName %> </td>
+                      <td> <%= p.phone %> </td>
+                      <td> <% if(p.jacketQuantity != null) {%> <%= p.jacketQuantity %> <% }else { %><%= 0 %> <% } %> </td>
+                      <td> <% if(p.capQuantity != null) {%> <%= p.capQuantity %> <% }else { %><%= 0 %> <% } %> </td>
+                      <td> <% if(p.glovesQuantity != null) {%> <%= p.glovesQuantity %> <% }else { %><%= 0 %> <% } %> </td>
+                      <td> <%= p.provinceTaxAmt %> </td>
+                      <td> <%= p.totalAmt %> </td>
+                    </tr>
+                  <% }); %>
+    
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>&copy; Online Store 2024</p>
+        </footer>
+    </body>
+    <%- include('layouts/footer') -%>

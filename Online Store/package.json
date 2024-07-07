@@ -1,0 +1,23 @@
+{
+  "name": "assingment-4",
+  "version": "1.0.0",
+  "description": "Online Store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sale",
+    "item",
+    "online",
+    "purchase"
+  ],
+  "author": "Shravani Mahendrakar",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.2.4"
+  }
+}
