@@ -8,6 +8,7 @@ To get started with this project, follow these steps:
 1. **Clone the repository**:
 - git clone <repository_url>
 - cd <project_directory>
+- npm install
 
 2. **Prerequisites**:
 - Visual Studio Code or any preferred IDE
